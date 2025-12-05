@@ -1,6 +1,6 @@
 :root{
   --bg: #0d1117;
-  --panel: #161b22;
+  --panel: #1f6cd9;
   --muted: #94a3b8;
   --accent: #16a34a;
   --danger: #ff6b6b;
@@ -48,8 +48,8 @@ h1, h2, label {
 .controls label{display:flex;flex-direction:column;font-size:13px;color:var(--muted);gap:6px}
 .select, select, input{padding:10px;border-radius:10px;border:0;background:#0b1420;color:inherit}
 .btn{padding:10px 14px;border-radius:10px;border:0;cursor:pointer;font-weight:700}
-.btn.primary{background:var(--accent);color:#fff}
-.btn.secondary{background:#1f2937;color:#fff}
+.btn.primary{background:var(--accent);color:#ffffff}
+.btn.secondary{background:#1f2937;color:#ffe600}
 
 .board-wrap{margin-top:8px;display:flex;flex-direction:column;gap:10px;align-items:center}
 .grid{width:100%;display:grid;gap:8px}
@@ -63,8 +63,8 @@ h1, h2, label {
   box-shadow:0 6px 16px rgba(2,6,23,.6);
 }
 .cell:active{transform:scale(.97)}
-.cell.revealed{background:#cfe9ff;color:#07203a}
-.cell.mine{background:linear-gradient(180deg,#ffb4b4,#ff7b7b);color:#2b0202;font-size:20px}
+.cell.revealed{background:#cfe9ff;color:#007bff}
+.cell.mine{background:linear-gradient(180deg,#ffb4b4,#ff7b7b);color:#f41010;font-size:20px}
 
 
 .cell.safe{
@@ -97,4 +97,9 @@ h1, h2, label {
   .app{padding:0}
   .grid{gap:6px}
 }
-body
+.cell img {
+  width: 98%;
+  height: 98%;
+  object-fit: contain;
+  pointer-events: none;
+}
